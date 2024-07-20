@@ -1,7 +1,7 @@
 :root {
     --primary-color: #2a4d8f; /* Lighter blue */
     --secondary-color: #3a6fc7; /* Lighter blue */
-    --accent-color: #4CAF50;
+    --accent-color: #4CAF50; /* New accent color matching the Snake game */
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 
 header {
     background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
     padding: 1rem;
     text-align: center;
 }
@@ -73,7 +74,7 @@ h1 {
     color: #cccccc;
 }
 
-.game-link {
+.game-link, .button {
     display: inline-block;
     padding: 0.75rem 1rem;
     background-color: var(--accent-color);
@@ -83,9 +84,11 @@ h1 {
     transition: background-color 0.3s;
     margin-top: auto;
     font-size: 1rem;
+    cursor: pointer;
+    min-width: 120px; /* Ensure buttons are wide enough */
 }
 
-.game-link:hover {
+.game-link:hover, .button:hover {
     background-color: #45a049;
 }
 
@@ -128,5 +131,10 @@ h1 {
     .game-link {
         padding: 0.5rem 0.75rem;
         font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }

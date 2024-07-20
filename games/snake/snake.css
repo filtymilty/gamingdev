@@ -133,19 +133,6 @@ h1 {
         padding: 10px 5px;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    #controlsInfo {
-        font-size: 12px;
-    }
-
     header {
         margin-bottom: 1rem; /* Adjust space for smaller screens */
     }
