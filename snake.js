@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const pauseMenuElement = document.getElementById('pauseMenu');
     const resumeButton = document.getElementById('resumeButton');
     const returnToMainButton = document.getElementById('returnToMainButton');
-    const returnToDashboardButton = document.getElementById('returnToDashboardButton');
     const gameOverMainMenuButton = document.getElementById('gameOverMainMenuButton');
 
     const gridSize = 20;
@@ -349,10 +348,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updateDisplayedHighScore();
     }
 
-    function goToDashboard() {
-        window.location.href = '../../index.html';
-    }
-
     function drawInitialBackground() {
         ctx.fillStyle = '#34495e';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -447,7 +442,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', handleKeydown);
     startButton.addEventListener('click', startGame);
     restartButton.addEventListener('click', restartGame);
-    returnToDashboardButton.addEventListener('click', goToDashboard);
     gameOverMainMenuButton.addEventListener('click', returnToMainMenu);
     canvas.addEventListener('touchstart', handleTouchStart, { passive: false });
     canvas.addEventListener('touchmove', handleTouchMove, { passive: false });

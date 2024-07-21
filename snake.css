@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #2a4d8f; /* Lighter blue */
-    --secondary-color: #3a6fc7; /* Lighter blue */
+    --primary-color: #2a4d8f;
+    --secondary-color: #3a6fc7;
     --accent-color: #4CAF50;
 }
 
@@ -8,13 +8,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Changed from center to flex-start */
+    justify-content: flex-start;
     min-height: 100vh;
     margin: 0;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: #ecf0f1;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    margin-bottom: 2rem; /* Add space between header and game container */
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -49,8 +49,8 @@ h1 {
     border: 3px solid #34495e;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
-    background-color: #34495e; /* Add this line */
-    touch-action: none; /* Prevent default touch actions */
+    background-color: #34495e;
+    touch-action: none;
 }
 
 #scoreBoard {
@@ -80,7 +80,7 @@ h1 {
 
 .button {
     margin-top: 10px;
-    padding: 12px 24px; /* Larger touch target */
+    padding: 12px 24px;
     font-size: clamp(14px, 3vw, 16px);
     cursor: pointer;
     background-color: var(--accent-color);
@@ -88,7 +88,7 @@ h1 {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    min-width: 120px; /* Ensure buttons are wide enough */
+    min-width: 120px;
 }
 
 .button:hover {
@@ -134,6 +134,6 @@ h1 {
     }
 
     header {
-        margin-bottom: 1rem; /* Adjust space for smaller screens */
+        margin-bottom: 1rem;
     }
 }
